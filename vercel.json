@@ -2,6 +2,7 @@
   "version": 2,
   "buildCommand": "echo 'No build required'",
   "outputDirectory": ".",
+  "public": true,
   "rewrites": [
     {
       "source": "/",
@@ -23,6 +24,10 @@
         {
           "key": "Expires",
           "value": "0"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "all"
         }
       ]
     }
