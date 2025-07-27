@@ -1,0 +1,611 @@
+
+       183 +  ## Complete Audio Files List
+       184    
+       185 +  ### Error 1: Denial of Statutory Advocacy Rights
+       186 +  ```bash
+       187 +  # Judge Statement
+       188 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_01_Advocacy_Rights_Exact_D
+           + D_EXACT.mp3
+       189 +  
+       190 +  # Ben's Argument  
+       191 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_01_Advocacy_Rights_Exact_B
+           + EN_EXACT.mp3
+       192 +  
+       193 +  # Complete Exchange
+       194 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_01_Advocacy_Rights_Exact_F
+           + ULL_EXACT.mp3
+       195 +  ```
+       196 +  
+       197 +  ### Error 2: McKenzie Friend Rights Dismissed
+       198 +  ```bash
+       199 +  # Judge Statement
+       200 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_02_McKenzie_Friend_Exact_D
+           + D_EXACT.mp3
+       201 +  
+       202 +  # Ben's Argument
+       203 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_02_McKenzie_Friend_Exact_B
+           + EN_EXACT.mp3
+       204 +  
+       205 +  # Complete Exchange
+       206 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_02_McKenzie_Friend_Exact_F
+           + ULL_EXACT.mp3
+       207 +  ```
+       208 +  
+       209 +  ### Error 3: Reading Support Request Denied
+       210 +  ```bash
+       211 +  # Judge Statement
+       212 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_03_Reading_Support_Exact_D
+           + D_EXACT.mp3
+       213 +  
+       214 +  # Ben's Argument
+       215 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_03_Reading_Support_Exact_B
+           + EN_EXACT.mp3
+       216 +  
+       217 +  # Complete Exchange
+       218 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_03_Reading_Support_Exact_F
+           + ULL_EXACT.mp3
+       219 +  ```
+       220 +  
+       221 +  ### Error 4: Special Guardianship Order Misapplication
+       222 +  ```bash
+       223 +  # Judge Statement
+       224 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_04_Special_Guardianship_Ex
+           + act_DD_EXACT.mp3
+       225 +  
+       226 +  # Ben's Argument
+       227 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_04_Special_Guardianship_Ex
+           + act_BEN_EXACT.mp3
+       228 +  
+       229 +  # Complete Exchange
+       230 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_04_Special_Guardianship_Ex
+           + act_FULL_EXACT.mp3
+       231 +  ```
+       232 +  
+       233 +  ### Error 5: Kinship Assessment Bias
+       234 +  ```bash
+       235 +  # Judge Statement
+       236 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_05_Kinship_Assessment_Exac
+           + t_DD_EXACT.mp3
+       237 +  
+       238 +  # Ben's Argument
+       239 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_05_Kinship_Assessment_Exac
+           + t_BEN_EXACT.mp3
+       240 +  
+       241 +  # Complete Exchange
+       242 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_05_Kinship_Assessment_Exac
+           + t_FULL_EXACT.mp3
+       243 +  ```
+       244 +  
+       245 +  ### Error 6: Due Process Violation
+       246 +  ```bash
+       247 +  # Judge Statement
+       248 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_06_Due_Process_Violation_E
+           + xact_DD_EXACT.mp3
+       249 +  
+       250 +  # Ben's Argument
+       251 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_06_Due_Process_Violation_E
+           + xact_BEN_EXACT.mp3
+       252 +  
+       253 +  # Complete Exchange
+       254 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_06_Due_Process_Violation_E
+           + xact_FULL_EXACT.mp3
+       255 +  ```
+       256 +  
+       257 +  ### Error 7: Educational Support Coordination Failure
+       258 +  ```bash
+       259 +  # Judge Statement
+       260 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_07_Educational_Support_Coo
+           + rdination_DD_EXACT.mp3
+       261 +  
+       262 +  # Ben's Argument
+       263 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_07_Educational_Support_Coo
+           + rdination_BEN_EXACT.mp3
+       264 +  
+       265 +  # Complete Exchange
+       266 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_07_Educational_Support_Coo
+           + rdination_FULL_EXACT.mp3
+       267 +  ```
+       268 +  
+       269 +  ### Error 8: De Facto Parent Status Ignored
+       270 +  ```bash
+       271 +  # Judge Statement
+       272 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_08_De_Facto_Parent_Status_
+           + DD_EXACT.mp3
+       273 +  
+       274 +  # Ben's Argument
+       275 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_08_De_Facto_Parent_Status_
+           + BEN_EXACT.mp3
+       276 +  
+       277 +  # Complete Exchange
+       278 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_08_De_Facto_Parent_Status_
+           + FULL_EXACT.mp3
+       279 +  ```
+       280 +  
+       281 +  ### Error 9: Medical Appointments Crisis
+       282 +  ```bash
+       283 +  # Judge Statement
+       284 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_09_Medical_Appointments_Cr
+           + isis_DD_EXACT.mp3
+       285 +  
+       286 +  # Ben's Argument
+       287 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_09_Medical_Appointments_Cr
+           + isis_BEN_EXACT.mp3
+       288 +  
+       289 +  # Complete Exchange
+       290 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_09_Medical_Appointments_Cr
+           + isis_FULL_EXACT.mp3
+       291 +  ```
+       292 +  
+       293 +  ### Error 10: Separation from Family Protocol Breach
+       294 +  ```bash
+       295 +  # Judge Statement
+       296 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_10_Separation_From_Family_
+           + DD_EXACT.mp3
+       297 +  
+       298 +  # Ben's Argument
+       299 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_10_Separation_From_Family_
+           + BEN_EXACT.mp3
+       300 +  
+       301 +  # Complete Exchange
+       302 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_10_Separation_From_Family_
+           + FULL_EXACT.mp3
+       303 +  ```
+       304 +  
+       305 +  ### Error 11: Information Request Mischaracterized
+       306 +  ```bash
+       307 +  # Judge Statement
+       308 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_11_Information_Request_Mis
+           + characterized_DD_EXACT.mp3
+       309 +  
+       310 +  # Ben's Argument
+       311 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_11_Information_Request_Mis
+           + characterized_BEN_EXACT.mp3
+       312 +  
+       313 +  # Complete Exchange
+       314 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_11_Information_Request_Mis
+           + characterized_FULL_EXACT.mp3
+       315 +  ```
+       316 +  
+       317 +  ### Error 12: Defamation by Authority
+       318 +  ```bash
+       319 +  # Judge Statement
+       320 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_12_Defamation_By_Authority
+           + _DD_EXACT.mp3
+       321 +  
+       322 +  # Ben's Argument
+       323 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_12_Defamation_By_Authority
+           + _BEN_EXACT.mp3
+       324 +  
+       325 +  # Complete Exchange
+       326 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_12_Defamation_By_Authority
+           + _FULL_EXACT.mp3
+       327 +  ```
+       328 +  
+       329 +  ### Error 13: Missing Documents Evidence
+       330 +  ```bash
+       331 +  # Judge Statement
+       332 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_13_Missing_Documents_Evide
+           + nce_DD_EXACT.mp3
+       333 +  
+       334 +  # Ben's Argument
+       335 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_13_Missing_Documents_Evide
+           + nce_BEN_EXACT.mp3
+       336 +  
+       337 +  # Complete Exchange
+       338 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_13_Missing_Documents_Evide
+           + nce_FULL_EXACT.mp3
+       339 +  ```
+       340 +  
+       341 +  ### Error 14: Child Emotional Distress Dismissal
+       342 +  ```bash
+       343 +  # Judge Statement
+       344 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_14_Child_Emotional_Distres
+           + s_DD_EXACT.mp3
+       345 +  
+       346 +  # Ben's Argument
+       347 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_14_Child_Emotional_Distres
+           + s_BEN_EXACT.mp3
+       348 +  
+       349 +  # Complete Exchange
+       350 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_14_Child_Emotional_Distres
+           + s_FULL_EXACT.mp3
+       351 +  ```
+       352 +  
+       353 +  ### Error 15: Due Process Rights Ignored
+       354 +  ```bash
+       355 +  # Judge Statement
+       356 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_15_Due_Process_Rights_Igno
+           + red_DD_EXACT.mp3
+       357 +  
+       358 +  # Ben's Argument
+       359 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_15_Due_Process_Rights_Igno
+           + red_BEN_EXACT.mp3
+       360 +  
+       361 +  # Complete Exchange
+       362 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_15_Due_Process_Rights_Igno
+           + red_FULL_EXACT.mp3
+       363 +  ```
+       364 +  
+       365 +  ### Error 16: Safeguarding Role Dismissed
+       366 +  ```bash
+       367 +  # Judge Statement
+       368 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_16_Safeguarding_Role_Dismi
+           + ssed_DD_EXACT.mp3
+       369 +  
+       370 +  # Ben's Argument
+       371 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_16_Safeguarding_Role_Dismi
+           + ssed_BEN_EXACT.mp3
+       372 +  
+       373 +  # Complete Exchange
+       374 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_16_Safeguarding_Role_Dismi
+           + ssed_FULL_EXACT.mp3
+       375 +  ```
+       376 +  
+       377 +  ### Error 17: Family Bonds Sacrificed
+       378 +  ```bash
+       379 +  # Judge Statement
+       380 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_17_Family_Bonds_Sacrificed
+           + _DD_EXACT.mp3
+       381 +  
+       382 +  # Ben's Argument
+       383 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_17_Family_Bonds_Sacrificed
+           + _BEN_EXACT.mp3
+       384 +  
+       385 +  # Complete Exchange
+       386 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_17_Family_Bonds_Sacrificed
+           + _FULL_EXACT.mp3
+       387 +  ```
+       388 +  
+       389 +  ### Error 18: Unique Bond and Qualifications Ignored
+       390 +  ```bash
+       391 +  # Judge Statement
+       392 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_18_Unique_Bond_And_Qualifi
+           + cations_DD_EXACT.mp3
+       393 +  
+       394 +  # Ben's Argument
+       395 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_18_Unique_Bond_And_Qualifi
+           + cations_BEN_EXACT.mp3
+       396 +  
+       397 +  # Complete Exchange
+       398 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_18_Unique_Bond_And_Qualifi
+           + cations_FULL_EXACT.mp3
+       399 +  ```
+       400 +  
+       401 +  ### Error 19: Fair Process Request Denied
+       402 +  ```bash
+       403 +  # Judge Statement
+       404 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_19_Fair_Process_Request_DD
+           + _EXACT.mp3
+       405 +  
+       406 +  # Ben's Argument
+       407 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_19_Fair_Process_Request_BE
+           + N_EXACT.mp3
+       408 +  
+       409 +  # Complete Exchange
+       410 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_19_Fair_Process_Request_FU
+           + LL_EXACT.mp3
+       411 +  ```
+       412 +  
+       413 +  ### Error 20: Physical Attack Evidence
+       414 +  ```bash
+       415 +  # Judge Statement
+       416 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_20_Physical_Attack_Evidenc
+           + e_DD_EXACT.mp3
+       417 +  
+       418 +  # Ben's Argument
+       419 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_20_Physical_Attack_Evidenc
+           + e_BEN_EXACT.mp3
+       420 +  
+       421 +  # Complete Exchange
+       422 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_20_Physical_Attack_Evidenc
+           + e_FULL_EXACT.mp3
+       423 +  ```
+       424 +  
+       425 +  ### Error 21: Investigation Failure Complete
+       426 +  ```bash
+       427 +  # Judge Statement
+       428 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_21_Investigation_Failure_C
+           + omplete_DD_EXACT.mp3
+       429 +  
+       430 +  # Ben's Argument
+       431 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_21_Investigation_Failure_C
+           + omplete_BEN_EXACT.mp3
+       432 +  
+       433 +  # Complete Exchange
+       434 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_21_Investigation_Failure_C
+           + omplete_FULL_EXACT.mp3
+       435 +  ```
+       436 +  
+       437 +  ### Error 22: Video Evidence Defense Dismissed
+       438 +  ```bash
+       439 +  # Judge Statement
+       440 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_22_Video_Evidence_Defense_
+           + DD_EXACT.mp3
+       441 +  
+       442 +  # Ben's Argument
+       443 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_22_Video_Evidence_Defense_
+           + BEN_EXACT.mp3
+       444 +  
+       445 +  # Complete Exchange
+       446 +  
+     https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/obje
+           + 
+     ct/public/audio-evidence/exact_22_Video_Evidence_Defense_
+           + FULL_EXACT.mp3
+       447 +  ```
+       448 +  
+       449 +  ## File Path Structure
+       450 +  ```bash
+       451 +  # Local project structure
+       452 +  /Volumes/EXCELLENCE 
+     DIRECT/EXPERTISE/databasestorage/cre
+           + ds/CLAUD_CODE/FRESH_LEGAL_PORTAL/
+       453 +  ├── index.html              # Main portal file
+       454 +  ├── vercel.json             # Deployment config
+       455 +  ├── README.md               # This documentation
+       456 +  ├── .github/workflows/      # GitHub Actions
+       457 +  └── .git/                   # Git repository
+       458 +  
+       459 +  # Supabase storage structure
+       460 +  /audio-evidence/
+       461 +  ├── branding/
+       462 +  │   └── justice_minds_header.png
+       463 +  ├── exact_01_Advocacy_Rights_Exact_DD_EXACT.mp3
+       464 +  ├── exact_01_Advocacy_Rights_Exact_BEN_EXACT.mp3
+       465 +  ├── exact_01_Advocacy_Rights_Exact_FULL_EXACT.mp3
+       466 +  ├── [... all 66 audio files for 22 errors ...]
+       467 +  └── exact_22_Video_Evidence_Defense_FULL_EXACT.mp3
+       468 +  ```
+       469 +  
+       470 +  ## Development Setup for AI
+       471 +  ```bash
+       472 +  # Clone repository
+       473 +  git clone 
+           + 
+     https://github.com/justicemindsdev/fresh-legal-portal.git
+       474 +  cd fresh-legal-portal
+       475 +  
+       476 +  # Set environment variables
+       477 +  export VERCEL_TOKEN=GpZ3SNXUVRPqrcJUV1IfwtGp
+       478 +  export 
+           + SUPABASE_URL=https://tvecnfdqakrevzaeifpk.supabase.co
+       479 +  
+       480 +  # Deploy to Vercel
+       481 +  npx vercel --prod --token $VERCEL_TOKEN --yes
+       482 +  
+       483 +  # Test locally
+       484 +  python3 -m http.server 8000
+       485 +  open http://localhost:8000
+       486 +  ```
+       487 +  
+       488    ## Troubleshooting
+       489    
+       490    ### If Deployment Fails:
+
+⏺ Perfect! I've now added comprehensive documentation including:
+
+  ✅ Complete Documentation Added:
+
+  1. All Environment Variables (.env format with actual credentials)
+  2. Complete Audio Files List - All 66 audio files (22 errors × 3 files each)
+  3. Full File Path Structure - Both local and Supabase paths
+  4. Development Setup for AI - Ready-to-copy commands
+  5. All Tokens & Keys - Vercel, Supabase, GitHub credentials
+
+  🔗 All Audio Links Included:
+
+  - Judge Statements (DD_EXACT files)
+  - Ben's Arguments (BEN_EXACT files)
+  - Complete Exchanges (FULL_EXACT files)
+
+  📁 Copy-Ready for AI:
+
+  # Everything needed for AI deployment:
+  VERCEL_TOKEN=GpZ3SNXUVRPqrcJUV1IfwtGp
+  SUPABASE_URL=https://tvecnfdqakrevzaeifpk.supabase.co
+  GITHUB_REPO=https://github.com/justicemindsdev/fresh-legal-portal.git
+
+  # One-command deployment:
+  npx vercel --prod --token GpZ3SNXUVRPqrcJUV1IfwtGp --yes
+
+  The README now contains everything an AI assistant would need to:
+  - ✅ Deploy the portal instantly
+  - ✅ Access all 66 audio files
+  - ✅ Understand the complete structure
+  - ✅ Troubleshoot common issues
+  - ✅ Set up development environment

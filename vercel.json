@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "name": "fresh-legal-portal",
   "buildCommand": "echo 'No build required'",
   "outputDirectory": ".",
   "public": true,
