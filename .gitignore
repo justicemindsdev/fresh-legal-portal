@@ -1,1 +1,8 @@
 .vercel
+node_modules/
+package-lock.json
+.DS_Store
+original_audio_court/
+*.mp3
+*.wav
+*.m4a
