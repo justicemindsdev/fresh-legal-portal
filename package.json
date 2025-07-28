@@ -1,0 +1,12 @@
+{
+  "name": "fresh-legal-portal",
+  "version": "1.0.0",
+  "description": "Legal Audio Evidence Portal",
+  "main": "index.html",
+  "scripts": {
+    "upload-audio": "node upload_audio.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.53.0"
+  }
+}

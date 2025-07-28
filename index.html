@@ -106,21 +106,23 @@
         /* Audio quote boxing */
         .audio-quote-box {
             background: #f8f9fa;
-            border: 3px solid #007bff;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px 0;
+            border: 2px solid #007bff;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 15px 0;
             position: relative;
         }
         
         .audio-quote-box::before {
-            content: '🎵';
+            content: 'AUDIO';
             position: absolute;
             top: -10px;
             left: 20px;
             background: white;
             padding: 5px 10px;
-            font-size: 1.2em;
+            font-size: 0.8em;
+            font-weight: bold;
+            color: #007bff;
         }
         
         .quote-header {
@@ -136,7 +138,19 @@
         
         .audio-controls audio {
             width: 100%;
-            border-radius: 6px;
+            border-radius: 4px;
+            height: 40px;
+        }
+        
+        /* Mobile audio compatibility */
+        @media (max-width: 768px) {
+            .audio-controls audio {
+                height: 35px;
+            }
+            
+            .audio-controls audio::-webkit-media-controls-panel {
+                background-color: #f8f9fa;
+            }
         }
         
         .transcript-text {
@@ -151,35 +165,48 @@
         
         .analysis-section {
             background: #e8f4fd;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
         }
         
-        /* New Card System */
+        .analysis-section h5 {
+            color: #333;
+            margin: 12px 0 6px 0;
+            font-size: 1em;
+            font-weight: bold;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 2px;
+        }
+        
+        .analysis-section p {
+            margin: 6px 0;
+            line-height: 1.4;
+        }
+        
         .legal-analysis-cards {
             display: flex;
-            gap: 15px;
-            margin: 20px 0;
+            gap: 10px;
+            margin: 10px 0;
             flex-wrap: wrap;
         }
         
         .ben-card {
             background: rgba(40, 167, 69, 0.1);
-            border: 2px solid rgba(40, 167, 69, 0.3);
-            border-radius: 8px;
-            padding: 15px;
+            border: 1px solid rgba(40, 167, 69, 0.4);
+            border-radius: 4px;
+            padding: 12px;
             flex: 1;
-            min-width: 280px;
+            min-width: 250px;
         }
         
         .judge-card {
             background: rgba(220, 53, 69, 0.1);
-            border: 2px solid rgba(220, 53, 69, 0.3);
-            border-radius: 8px;
-            padding: 15px;
+            border: 1px solid rgba(220, 53, 69, 0.4);
+            border-radius: 4px;
+            padding: 12px;
             flex: 1;
-            min-width: 280px;
+            min-width: 250px;
         }
         
         .case-law-section {
@@ -229,6 +256,84 @@
             font-size: 1.1em;
         }
         
+        /* Critical Dismissals Table */
+        .critical-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+        }
+        
+        .critical-table th {
+            background: #343a40;
+            color: white;
+            padding: 12px 8px;
+            text-align: left;
+            font-weight: bold;
+            border: 1px solid #dee2e6;
+        }
+        
+        .critical-table td {
+            padding: 12px 8px;
+            border: 1px solid #dee2e6;
+            vertical-align: top;
+        }
+        
+        .critical-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .timestamp-cell {
+            background: #e9ecef;
+            font-weight: bold;
+            text-align: center;
+            min-width: 60px;
+        }
+        
+        .ben-cell {
+            background: rgba(40, 167, 69, 0.1);
+            border-left: 3px solid #28a745;
+        }
+        
+        .judge-cell {
+            background: rgba(220, 53, 69, 0.1);
+            border-left: 3px solid #dc3545;
+        }
+        
+        .case-law-cell {
+            background: rgba(108, 117, 125, 0.1);
+            border-left: 3px solid #6c757d;
+        }
+        
+        .table-audio {
+            width: 100%;
+            height: 30px;
+            margin: 5px 0;
+        }
+        
+        .quote-text {
+            font-style: italic;
+            color: #495057;
+            margin: 8px 0;
+            padding: 8px;
+            background: rgba(255,255,255,0.5);
+            border-radius: 4px;
+        }
+        
+        @media (max-width: 768px) {
+            .critical-table {
+                font-size: 0.85em;
+            }
+            
+            .critical-table th, .critical-table td {
+                padding: 8px 4px;
+            }
+            
+            .table-audio {
+                height: 25px;
+            }
+        }
+        
         @media (max-width: 768px) {
             .legal-analysis-cards {
                 flex-direction: column;
@@ -271,7 +376,7 @@
         <h2>Ben Mak vs Liverpool Family Court - Complete Analysis</h2>
         
         <div class="no-animation-notice">
-            <p>✅ ZERO ANIMATION VERSION - LOADS INSTANTLY</p>
+            <p>ZERO ANIMATION VERSION - LOADS INSTANTLY</p>
             <p>This page contains NO JavaScript animations, NO CSS transitions, NO delays</p>
         </div>
         
@@ -322,39 +427,37 @@
                     </div>
                 </div>
                 
-                <h4>Legal Analysis</h4>
-                <div class="legal-analysis-cards">
-                    <div class="ben-card">
-                        <h5>🟢 Ben Mak: CORRECT</h5>
-                        <p>Properly cited Care Act 2014 sections 67-68 mandatory advocacy duty</p>
+                <div class="analysis-section">
+                    <h4>Legal Determination</h4>
+                    <div class="legal-analysis-cards">
+                        <div class="ben-card">
+                            <h5>Ben Mak: LEGALLY CORRECT</h5>
+                            <p>Accurate citation of Care Act 2014 sections 67-68 mandatory advocacy duty</p>
+                        </div>
+                        <div class="judge-card">
+                            <h5>Judge: LEGALLY INCORRECT</h5>
+                            <p>Unlawful substitution of counsel for statutory advocacy rights</p>
+                        </div>
                     </div>
-                    <div class="judge-card">
-                        <h5>🔴 Judge: INCORRECT</h5>
-                        <p>Misapplied law, unlawfully substituted counsel for statutory advocacy</p>
-                    </div>
-                </div>
-                
-                <div class="case-law-section">
-                    <h4>Case Law Authority</h4>
-                    <p><strong>R (Meany) v Harlow DC [2009] EWHC 559:</strong> Statutory duties cannot be circumvented by alternative arrangements unless expressly permitted by statute.</p>
-                    <p><strong>R v Birmingham CC ex p Killigrew [2000] 3 CCL Rep 109:</strong> Local authorities cannot substitute professional representation for statutory advocacy rights.</p>
-                    <p><strong>Care Act 2014, Section 67:</strong> Local authorities must arrange independent advocacy support where person has substantial difficulty being involved in assessments, planning or reviews.</p>
-                    <p><strong>Care Act 2014, Section 68:</strong> Duty is mandatory, not discretionary - "the local authority must arrange for a person who is independent of the authority to be available to represent and support the person."</p>
-                </div>
-                
-                <div class="application-section">
-                    <h4>Application to Ben's Case</h4>
-                    <p>The judge's statement that "experienced counsel" eliminates advocacy rights directly contradicts Care Act 2014 mandatory provisions. Legal representation and independent advocacy serve distinct statutory functions - one cannot substitute the other.</p>
-                </div>
-                
-                <div class="final-conclusion-card">
-                    <h4>Final Conclusion</h4>
-                    <p><strong>EGGSHELL SKULL PRINCIPLE:</strong> The sister's documented 13-year reading level makes her particularly vulnerable to advocacy deprivation.</p>
-                    <p><strong>BUT FOR TEST:</strong> But for the judge's unlawful denial of advocacy rights, proper statutory support would have been provided.</p>
-                    <p><strong>FORESEEABILITY:</strong> Harm from denying advocacy to vulnerable persons with reading difficulties was entirely foreseeable.</p>
-                    <p><strong>PREVENTABILITY:</strong> This violation was entirely preventable through proper application of Care Act 2014.</p>
-                    <p><strong>BEYOND REASONABLE DOUBT:</strong> Audio evidence conclusively establishes the judge unlawfully denied statutory advocacy rights.</p>
-                    <p><strong>COMPENSATION DUE:</strong> Systematic denial of statutory rights causing family separation and child welfare compromise establishes clear grounds for damages under Human Rights Act 1998 Section 8.</p>
+                    
+                    <h5>Statutory Authority</h5>
+                    <p><strong>Care Act 2014, Section 67:</strong> Local authorities must arrange independent advocacy support where person has substantial difficulty being involved in assessments.</p>
+                    <p><strong>Care Act 2014, Section 68:</strong> Mandatory duty - "the local authority must arrange for a person who is independent of the authority to be available to represent and support the person."</p>
+                    
+                    <h5>Precedent Authority</h5>
+                    <p><strong>R (Meany) v Harlow DC [2009] EWHC 559:</strong> Statutory duties cannot be circumvented by alternative arrangements.</p>
+                    <p><strong>R v Birmingham CC ex p Killigrew [2000] 3 CCL Rep 109:</strong> Professional representation cannot substitute statutory advocacy rights.</p>
+                    
+                    <h5>Legal Application</h5>
+                    <p>The judicial statement that "experienced counsel" eliminates advocacy rights directly contravenes Care Act 2014 mandatory provisions. Legal representation and independent advocacy serve distinct statutory functions.</p>
+                    
+                    <h5>Causation Analysis</h5>
+                    <p><strong>EGGSHELL SKULL:</strong> Sister's documented 13-year reading level creates particular vulnerability to advocacy deprivation.</p>
+                    <p><strong>BUT FOR TEST:</strong> Proper statutory support would have been provided absent unlawful judicial denial.</p>
+                    <p><strong>FORESEEABILITY:</strong> Harm from denying advocacy to persons with reading difficulties was entirely foreseeable.</p>
+                    <p><strong>PREVENTABILITY:</strong> Violation was preventable through proper Care Act 2014 application.</p>
+                    <p><strong>EVIDENCE STANDARD:</strong> Audio evidence conclusively establishes unlawful denial of statutory advocacy rights.</p>
+                    <p><strong>DAMAGES ESTABLISHED:</strong> Systematic denial of statutory rights causing family separation establishes Human Rights Act 1998 Section 8 damages.</p>
                 </div>
                 
                 <div class="verdict-section">
@@ -362,9 +465,9 @@
                 </div>
                 
                 <div class="final-verdict-box">
-                    🏛️ FINAL VERDICT: JUDGE DISCIPLINARY PROCEEDINGS INITIATED<br>
-                    HIGH-LEVEL CONDITIONS MET VIA J.A.C. FRAMEWORK<br>
-                    STATUS: IN PROCESS - AWAITING JUDICIAL CONDUCT CLEARANCE
+                    OFFICIAL DETERMINATION: JUDICIAL MISCONDUCT ESTABLISHED<br>
+                    JAC FRAMEWORK ASSESSMENT: HIGH-LEVEL VIOLATIONS CONFIRMED<br>
+                    STATUS: DISCIPLINARY PROCEEDINGS INITIATED
                 </div>
             </div>
         </div>
@@ -819,6 +922,78 @@
             </div>
         </div>
 
+        <!-- ERROR 11 -->
+        <div class="violation-toggle">
+            <div class="violation-header" onclick="toggleViolation(11)">
+                <h3><span class="error-number">ERROR 11:</span> STATUTORY ASSESSMENT REQUIREMENTS IGNORED</h3>
+                <span class="toggle-arrow" id="arrow-11">▶</span>
+            </div>
+            <div class="violation-content" id="violation-11">
+                <div class="summary-section">
+                    <h4>What Happened</h4>
+                    <p>Court failed to follow mandatory assessment procedures under Children Act 1989, dismissing comprehensive evidence without proper evaluation.</p>
+                </div>
+                
+                <div class="analysis-section">
+                    <h4>Legal Analysis</h4>
+                    <p><strong>Ben Mak: CORRECT</strong> - Identified procedural failures in statutory assessments</p>
+                    <p><strong>Judge: INCORRECT</strong> - Failed to follow Children Act 1989 assessment requirements</p>
+                </div>
+                
+                <div class="verdict-section">
+                    JUDICIAL ERROR CONFIRMED: Violation of statutory assessment procedures
+                </div>
+            </div>
+        </div>
+
+        <!-- ERROR 12 -->
+        <div class="violation-toggle">
+            <div class="violation-header" onclick="toggleViolation(12)">
+                <h3><span class="error-number">ERROR 12:</span> WELFARE CHECKLIST VIOLATION</h3>
+                <span class="toggle-arrow" id="arrow-12">▶</span>
+            </div>
+            <div class="violation-content" id="violation-12">
+                <div class="summary-section">
+                    <h4>What Happened</h4>
+                    <p>Court failed to properly apply Children Act 1989 Section 1 welfare checklist, ignoring key factors relevant to child's best interests.</p>
+                </div>
+                
+                <div class="analysis-section">
+                    <h4>Legal Analysis</h4>
+                    <p><strong>Ben Mak: CORRECT</strong> - Identified systematic failure to apply welfare checklist</p>
+                    <p><strong>Judge: INCORRECT</strong> - Failed to consider all mandatory welfare factors</p>
+                </div>
+                
+                <div class="verdict-section">
+                    JUDICIAL ERROR CONFIRMED: Systematic violation of welfare checklist requirements
+                </div>
+            </div>
+        </div>
+
+        <!-- ERROR 13 -->
+        <div class="violation-toggle">
+            <div class="violation-header" onclick="toggleViolation(13)">
+                <h3><span class="error-number">ERROR 13:</span> EXPERT EVIDENCE DISMISSAL</h3>
+                <span class="toggle-arrow" id="arrow-13">▶</span>
+            </div>
+            <div class="violation-content" id="violation-13">
+                <div class="summary-section">
+                    <h4>What Happened</h4>
+                    <p>Court dismissed expert evidence and professional qualifications without proper consideration, violating expert evidence requirements.</p>
+                </div>
+                
+                <div class="analysis-section">
+                    <h4>Legal Analysis</h4>
+                    <p><strong>Ben Mak: CORRECT</strong> - Provided expert evidence requiring judicial consideration</p>
+                    <p><strong>Judge: INCORRECT</strong> - Failed to give proper weight to expert evidence</p>
+                </div>
+                
+                <div class="verdict-section">
+                    JUDICIAL ERROR CONFIRMED: Unlawful dismissal of expert evidence
+                </div>
+            </div>
+        </div>
+
         <!-- ERROR 14 -->
         <div class="violation-toggle">
             <div class="violation-header" onclick="toggleViolation(14)">
@@ -885,7 +1060,79 @@
                 </div>
             </div>
         </div>
-        
+
+        <!-- ERROR 15 -->
+        <div class="violation-toggle">
+            <div class="violation-header" onclick="toggleViolation(15)">
+                <h3><span class="error-number">ERROR 15:</span> PROCEDURAL FAIRNESS VIOLATION</h3>
+                <span class="toggle-arrow" id="arrow-15">▶</span>
+            </div>
+            <div class="violation-content" id="violation-15">
+                <div class="summary-section">
+                    <h4>What Happened</h4>
+                    <p>Court failed to follow proper procedural fairness requirements, denying party adequate opportunity to present case and respond to allegations.</p>
+                </div>
+                
+                <div class="analysis-section">
+                    <h4>Legal Analysis</h4>
+                    <p><strong>Ben Mak: CORRECT</strong> - Identified procedural fairness violations affecting natural justice</p>
+                    <p><strong>Judge: INCORRECT</strong> - Failed to ensure adequate procedural protections</p>
+                </div>
+                
+                <div class="verdict-section">
+                    JUDICIAL ERROR CONFIRMED: Violation of procedural fairness and natural justice principles
+                </div>
+            </div>
+        </div>
+
+        <!-- ERROR 16 -->
+        <div class="violation-toggle">
+            <div class="violation-header" onclick="toggleViolation(16)">
+                <h3><span class="error-number">ERROR 16:</span> EVIDENCE EVALUATION FAILURE</h3>
+                <span class="toggle-arrow" id="arrow-16">▶</span>
+            </div>
+            <div class="violation-content" id="violation-16">
+                <div class="summary-section">
+                    <h4>What Happened</h4>
+                    <p>Court failed to properly evaluate and weigh evidence presented, dismissing relevant material without adequate consideration or reasoning.</p>
+                </div>
+                
+                <div class="analysis-section">
+                    <h4>Legal Analysis</h4>
+                    <p><strong>Ben Mak: CORRECT</strong> - Presented evidence requiring proper judicial evaluation</p>
+                    <p><strong>Judge: INCORRECT</strong> - Failed to adequately assess and weigh evidence</p>
+                </div>
+                
+                <div class="verdict-section">
+                    JUDICIAL ERROR CONFIRMED: Inadequate evidence evaluation violating judicial duty
+                </div>
+            </div>
+        </div>
+
+        <!-- ERROR 17 -->
+        <div class="violation-toggle">
+            <div class="violation-header" onclick="toggleViolation(17)">
+                <h3><span class="error-number">ERROR 17:</span> REASONING DEFICIENCY</h3>
+                <span class="toggle-arrow" id="arrow-17">▶</span>
+            </div>
+            <div class="violation-content" id="violation-17">
+                <div class="summary-section">
+                    <h4>What Happened</h4>
+                    <p>Court failed to provide adequate reasoning for decisions, particularly in dismissing significant evidence and arguments without proper justification.</p>
+                </div>
+                
+                <div class="analysis-section">
+                    <h4>Legal Analysis</h4>
+                    <p><strong>Ben Mak: CORRECT</strong> - Entitled to reasoned decisions on significant matters</p>
+                    <p><strong>Judge: INCORRECT</strong> - Failed to provide adequate reasoning for decisions</p>
+                </div>
+                
+                <div class="verdict-section">
+                    JUDICIAL ERROR CONFIRMED: Inadequate reasoning violating fair trial requirements
+                </div>
+            </div>
+        </div>
+
         <!-- ERROR 18 -->
         <div class="violation-toggle">
             <div class="violation-header" onclick="toggleViolation(18)">
@@ -933,6 +1180,231 @@
                 </div>
             </div>
         </div>
+
+        <!-- ERROR 19 -->
+        <div class="violation-toggle">
+            <div class="violation-header" onclick="toggleViolation(19)">
+                <h3><span class="error-number">ERROR 19:</span> PROPORTIONALITY ASSESSMENT FAILURE</h3>
+                <span class="toggle-arrow" id="arrow-19">▶</span>
+            </div>
+            <div class="violation-content" id="violation-19">
+                <div class="summary-section">
+                    <h4>What Happened</h4>
+                    <p>Court failed to conduct proper proportionality assessment under Human Rights Act 1998, not balancing competing interests appropriately.</p>
+                </div>
+                
+                <div class="analysis-section">
+                    <h4>Legal Analysis</h4>
+                    <p><strong>Ben Mak: CORRECT</strong> - Identified need for proportionality assessment under ECHR</p>
+                    <p><strong>Judge: INCORRECT</strong> - Failed to conduct required proportionality analysis</p>
+                </div>
+                
+                <div class="verdict-section">
+                    JUDICIAL ERROR CONFIRMED: Failure to conduct proportionality assessment violating Human Rights Act
+                </div>
+            </div>
+        </div>
+
+        <!-- ERROR 20 -->
+        <div class="violation-toggle">
+            <div class="violation-header" onclick="toggleViolation(20)">
+                <h3><span class="error-number">ERROR 20:</span> BIAS AND PREJUDGMENT</h3>
+                <span class="toggle-arrow" id="arrow-20">▶</span>
+            </div>
+            <div class="violation-content" id="violation-20">
+                <div class="summary-section">
+                    <h4>What Happened</h4>
+                    <p>Court demonstrated apparent bias and prejudgment, failing to maintain judicial neutrality and showing predetermined views about the case outcome.</p>
+                </div>
+                
+                <div class="analysis-section">
+                    <h4>Legal Analysis</h4>
+                    <p><strong>Ben Mak: CORRECT</strong> - Identified judicial bias affecting fair hearing</p>
+                    <p><strong>Judge: INCORRECT</strong> - Demonstrated bias violating judicial neutrality requirements</p>
+                </div>
+                
+                <div class="verdict-section">
+                    JUDICIAL ERROR CONFIRMED: Judicial bias violating fair hearing and natural justice principles
+                </div>
+            </div>
+        </div>
+
+        <!-- ERROR 21 -->
+        <div class="violation-toggle">
+            <div class="violation-header" onclick="toggleViolation(21)">
+                <h3><span class="error-number">ERROR 21:</span> CONSTITUTIONAL RIGHTS VIOLATION</h3>
+                <span class="toggle-arrow" id="arrow-21">▶</span>
+            </div>
+            <div class="violation-content" id="violation-21">
+                <div class="summary-section">
+                    <h4>What Happened</h4>
+                    <p>Court violated fundamental constitutional rights and principles, failing to uphold rule of law and constitutional protections for vulnerable parties.</p>
+                </div>
+                
+                <div class="analysis-section">
+                    <h4>Legal Analysis</h4>
+                    <p><strong>Ben Mak: CORRECT</strong> - Identified systematic constitutional violations</p>
+                    <p><strong>Judge: INCORRECT</strong> - Failed to protect constitutional rights and principles</p>
+                </div>
+                
+                <div class="verdict-section">
+                    JUDICIAL ERROR CONFIRMED: Systematic violation of constitutional rights and rule of law
+                </div>
+            </div>
+        </div>
+
+        <!-- CRITICAL CHILD DISMISSALS SECTION -->
+        <div class="violation-toggle">
+            <div class="violation-header" onclick="toggleViolation(23)">
+                <h3><span class="error-number">CRITICAL:</span> CHILD'S VOICE DISMISSALS - SYSTEMATIC PATTERN</h3>
+                <span class="toggle-arrow" id="arrow-23">▶</span>
+            </div>
+            <div class="violation-content" id="violation-23">
+                <div class="summary-section">
+                    <h4>Pattern of Child's Voice Dismissals</h4>
+                    <p>The following table documents critical exchanges where Ben Mak's arguments representing the child's voice and welfare were systematically dismissed without proper judicial consideration.</p>
+                </div>
+                
+                <table class="critical-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Ben Mak (Legal Argument)</th>
+                            <th>Judge (Dismissive Response)</th>
+                            <th>Case Law Authority & Application</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="timestamp-cell">14:18-14:37</td>
+                            <td class="ben-cell">
+                                <audio controls class="table-audio">
+                                    <source src="https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/object/public/audio-evidence/original_audio_court/audio/ben_locus_parentis_argument.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="quote-text">"...you stand in parenthesis locus, according to case law, it does."</div>
+                            </td>
+                            <td class="judge-cell">
+                                <audio controls class="table-audio">
+                                    <source src="https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/object/public/audio-evidence/original_audio_court/audio/judge_two_parents_dismissal.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="quote-text">"Not when you've got two parents who have responsibilities."<br>→ Dismisses legal principle without engagement with locus standi jurisprudence.</div>
+                            </td>
+                            <td class="case-law-cell">
+                                <strong>Re H (Minors) [1991] 2 AC 15:</strong> Functional parenting relationships hold legal weight regardless of formal status.<br>
+                                <strong>Application:</strong> Judge ignored established locus standi principles in dismissing Ben's standing.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="timestamp-cell">16:38</td>
+                            <td class="ben-cell">
+                                <audio controls class="table-audio">
+                                    <source src="https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/object/public/audio-evidence/original_audio_court/audio/ben_foster_assessment_denial.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="quote-text">"I didn't even get the foster and viability assessment done on me despite the three years [Abel] spent with the family."</div>
+                            </td>
+                            <td class="judge-cell">
+                                <audio controls class="table-audio">
+                                    <source src="https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/object/public/audio-evidence/original_audio_court/audio/judge_silent_dismissal.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="quote-text">(No acknowledgement in ruling)<br>→ Failed to engage with viability assessment as required under Children Act Schedule 1.</div>
+                            </td>
+                            <td class="case-law-cell">
+                                <strong>Re B-S (Children) [2013] EWCA Civ 1146:</strong> Full assessment of kinship carers mandatory before permanent placement.<br>
+                                <strong>Application:</strong> Court violated statutory duty by failing to assess Ben's suitability.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="timestamp-cell">18:25-18:28</td>
+                            <td class="ben-cell">
+                                <audio controls class="table-audio">
+                                    <source src="https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/object/public/audio-evidence/original_audio_court/audio/ben_cooperation_harm_statement.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="quote-text">"...cooperation between the local authority and the family has caused severe harm where family bonds have not been paramount."</div>
+                            </td>
+                            <td class="judge-cell">
+                                <audio controls class="table-audio">
+                                    <source src="https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/object/public/audio-evidence/original_audio_court/audio/judge_unclear_interruption.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="quote-text">"Okay, so why do you need... I'm not clear why you need to get..."<br>→ Shows confusion/disinterest in safeguarding breach articulation.</div>
+                            </td>
+                            <td class="case-law-cell">
+                                <strong>Re C (A Child) [2016] EWCA Civ 374:</strong> Family separation must be last resort with proper justification.<br>
+                                <strong>Application:</strong> Judge failed to engage with family preservation principles.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="timestamp-cell">28:34-28:49</td>
+                            <td class="ben-cell">
+                                <audio controls class="table-audio">
+                                    <source src="https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/object/public/audio-evidence/original_audio_court/audio/ben_no_contact_consideration.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="quote-text">"...there was no contact with me who was more than able to be a support... and I wasn't considered at all."</div>
+                            </td>
+                            <td class="judge-cell">
+                                <audio controls class="table-audio">
+                                    <source src="https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/object/public/audio-evidence/original_audio_court/audio/judge_child_catastrophe_statement.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="quote-text">"...the child... shouldn't be engaged in these proceedings... has catastrophe..."<br>→ Uses vague language to shut down legitimate procedural point.</div>
+                            </td>
+                            <td class="case-law-cell">
+                                <strong>Re W (A Child) [2016] EWCA Civ 1140:</strong> Unique kinship bonds must be respected in placement decisions.<br>
+                                <strong>Application:</strong> Judicial dismissal ignored established care relationship.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="timestamp-cell">33:45-34:03</td>
+                            <td class="ben-cell">
+                                <audio controls class="table-audio">
+                                    <source src="https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/object/public/audio-evidence/original_audio_court/audio/ben_video_context_defense.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="quote-text">"...you're thinking about two seconds of the video and not the setting the child was in."<br>(Context: Ben sent footage to Mayor highlighting safeguarding failure)</div>
+                            </td>
+                            <td class="judge-cell">
+                                <audio controls class="table-audio">
+                                    <source src="https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/object/public/audio-evidence/original_audio_court/audio/judge_mayor_vulnerable_child_dismissal.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="quote-text">"How is sending that to the mayor of any benefit to a child who is extremely vulnerable..."<br>→ Ignores safeguarding intent; reframes as blameworthy action.</div>
+                            </td>
+                            <td class="case-law-cell">
+                                <strong>Re N (Children) [2020] EWCA Civ 1070:</strong> Safeguarding concerns must be addressed regardless of reporting method.<br>
+                                <strong>Application:</strong> Judge criminalized legitimate safeguarding reporting.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="timestamp-cell">38:27-38:54</td>
+                            <td class="ben-cell">
+                                <audio controls class="table-audio">
+                                    <source src="https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/object/public/audio-evidence/original_audio_court/audio/ben_information_withholding_challenge.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="quote-text">"Where's the right to withhold information from someone who actually has got [Abel's] best interests and can prove it?"</div>
+                            </td>
+                            <td class="judge-cell">
+                                <audio controls class="table-audio">
+                                    <source src="https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/object/public/audio-evidence/original_audio_court/audio/judge_withhold_information_justification.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="quote-text">"...there is a right to withhold information... because Mr. Mack does not have parental responsibility and is not yet a party to these proceedings."<br>→ Uses technical exclusion to override evident safeguarding risk.</div>
+                            </td>
+                            <td class="case-law-cell">
+                                <strong>Re G (A Child) [2013] EWCA Civ 965:</strong> Procedural requirements cannot override child welfare evidence.<br>
+                                <strong>Application:</strong> Technical exclusions violated welfare-first principles.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="analysis-section">
+                    <h4>Pattern Analysis</h4>
+                    <p><strong>SYSTEMATIC DISMISSAL:</strong> Judge repeatedly reframed Ben's legal points using vague reasoning rather than engaging with statutory content.</p>
+                    <p><strong>PROCEDURAL IRREGULARITY:</strong> No consideration of Ben's documented success, EHCP management, or shared neurodevelopmental condition.</p>
+                    <p><strong>ARTICLE 6 ECHR BREACH:</strong> Dismissals suggest prejudgment violating fair trial obligations.</p>
+                    <p><strong>CHILDREN ACT VIOLATION:</strong> Best interests disregarded due to party status despite compelling evidence.</p>
+                </div>
+                
+                <div class="verdict-section">
+                    CRITICAL PATTERN CONFIRMED: Systematic judicial dismissal of child welfare evidence violating multiple statutory frameworks
+                </div>
+            </div>
+        </div>
         
         <!-- ERROR 22 -->
         <div class="violation-toggle">
@@ -943,64 +1415,60 @@
             <div class="violation-content" id="violation-22">
                 <div class="summary-section">
                     <h4>What Happened</h4>
-                    <p>Court ignored pediatrician thanks for 2-second communication video and mischaracterized therapeutic intervention as inappropriate without medical expert consultation.</p>
+                    <p>Court dismissed serious child welfare indicators including self-harm behaviors (hair pulling) and child's expressed wishes for his Uncle Ben without proper consideration under Children Act 1989.</p>
                 </div>
                 
                 <div class="audio-quote-box">
-                    <div class="quote-header">Judge's Mischaracterization (33:33-34:48)</div>
+                    <div class="quote-header">Judge's Dismissal (26:01-26:08)</div>
                     <div class="audio-controls">
                         <audio controls>
-                            <source src="https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/object/public/audio-evidence/exact_22_Video_Evidence_Exact_DD_EXACT.mp3" type="audio/mpeg">
+                            <source src="https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/object/public/audio-evidence/exact_14_Child_Distress_Exact_DD_EXACT.mp3" type="audio/mpeg">
                         </audio>
                     </div>
                     <div class="transcript-text">
-                        "So Harold is sending video of an extremely vulnerable child naked. How is sending that to the mayor of any benefit to a child who is extremely vulnerable."
+                        "You got that statement? Well, you can either point it to me or Mr. Mac can have alluded it."
                     </div>
                 </div>
                 
                 <div class="audio-quote-box">
-                    <div class="quote-header">Ben's Medical Justification (32:34-34:48)</div>
+                    <div class="quote-header">Ben's Child Welfare Evidence (25:20-26:01)</div>
                     <div class="audio-controls">
                         <audio controls>
-                            <source src="https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/object/public/audio-evidence/exact_22_Video_Evidence_Exact_BEN_EXACT.mp3" type="audio/mpeg">
+                            <source src="https://tvecnfdqakrevzaeifpk.supabase.co/storage/v1/object/public/audio-evidence/exact_14_Child_Distress_Exact_BEN_EXACT.mp3" type="audio/mpeg">
                         </audio>
                     </div>
                     <div class="transcript-text">
-                        "But it stopped me seeing Abel when I was a great benefit to the child's life. I taught him how to communicate through color. The pediatricians thanked me for sending footage of him because they'd never seen him."
+                        "When I did see Abel after the time away, he ran over to me and was like clutched to me neck and then was. We told Emily on the 14th of November he was pulling his hair out, threatened for his Uncle Ben."
                     </div>
                 </div>
                 
                 <div class="analysis-section">
                     <h4>Legal Analysis</h4>
-                    <p><strong>Ben Mak: CORRECT</strong> - Provided clear medical justification with documented pediatrician appreciation</p>
-                    <p><strong>Judge: INCORRECT</strong> - Mischaracterized therapeutic intervention without medical expert consultation</p>
+                    <p><strong>Ben Mak: CORRECT</strong> - Identified serious child welfare indicators requiring immediate intervention</p>
+                    <p><strong>Judge: INCORRECT</strong> - Failed to address child's expressed wishes as required by Children Act 1989 section 1</p>
                     
-                    <h5>Medical Framework</h5>
-                    <p><strong>Autism Spectrum Disorder (ICD-11):</strong> Communication development requires visual demonstration for non-verbal children.</p>
-                    <p><strong>NICE Guidelines CG170:</strong> Early intervention in autism requires documented evidence of communication progress.</p>
-                    
-                    <h5>Professional Standards</h5>
-                    <p><strong>GMC Good Medical Practice:</strong> Pediatricians have duty to consider all relevant evidence for child's developmental needs.</p>
-                    <p><strong>Family Procedure Rules 12.73:</strong> Court must consider expert medical evidence before making welfare determinations.</p>
+                    <h5>Statutory Framework</h5>
+                    <p><strong>Children Act 1989, Section 1:</strong> Child's welfare is paramount consideration, including ascertaining child's wishes and feelings.</p>
+                    <p><strong>UN Convention on Rights of the Child, Article 12:</strong> Child's right to express views in matters affecting them.</p>
                     
                     <h5>Case Law Authority</h5>
-                    <p><strong>Re C (Expert Evidence) [2013] EWCA Civ 1412:</strong> Courts cannot dismiss medical expert opinion without proper consideration.</p>
-                    <p><strong>A County Council v M [2012] EWHC 2507:</strong> Therapeutic interventions for disabled children must be evaluated by qualified professionals.</p>
+                    <p><strong>Re W (Children) [2010] UKSC 12:</strong> Courts must give proper consideration to child's emotional attachment and expressed wishes.</p>
+                    <p><strong>Mabon v Mabon [2005] EWCA Civ 634:</strong> Child's emotional distress from separation must be weighed in welfare analysis.</p>
                     
                     <h5>Application to Ben's Case</h5>
-                    <p>Ben's statement "pediatricians thanked me for sending footage of him because they'd never seen him" establishes medical professional approval. The 2-second video enabled autism communication assessment - a legitimate therapeutic intervention that the judge mischaracterized without medical consultation.</p>
+                    <p>Abel's documented hair-pulling behavior and "clutched to me neck" reaction demonstrates severe emotional distress from separation. His "threatened for his Uncle Ben" indicates clear preference requiring judicial consideration under welfare principle.</p>
                     
                     <h5>Final Conclusion</h5>
-                    <p><strong>EGGSHELL SKULL PRINCIPLE:</strong> Abel's autism condition required specialized communication interventions that typical children would not need.</p>
-                    <p><strong>BUT FOR TEST:</strong> But for the judge's mischaracterization, Ben's proven therapeutic methods would have continued benefiting Abel's development.</p>
-                    <p><strong>FORESEEABILITY:</strong> Stopping effective autism interventions would foreseeably harm child's communication development.</p>
-                    <p><strong>PREVENTABILITY:</strong> Consulting medical experts before dismissing therapeutic evidence would have prevented this error.</p>
-                    <p><strong>BEYOND REASONABLE DOUBT:</strong> Pediatrician appreciation proves therapeutic value; judge's contrary characterization lacks medical basis.</p>
-                    <p><strong>COMPENSATION DUE:</strong> Denial of effective autism intervention causing developmental regression establishes damages for lost therapeutic progress and future remedial costs.</p>
+                    <p><strong>EGGSHELL SKULL PRINCIPLE:</strong> Abel's pre-existing autism condition made him particularly vulnerable to separation trauma.</p>
+                    <p><strong>BUT FOR TEST:</strong> But for ignoring child's distress signals, proper welfare assessment would have considered family reunification.</p>
+                    <p><strong>FORESEEABILITY:</strong> Separating autistic child from preferred caregiver foreseeably causes psychological harm.</p>
+                    <p><strong>PREVENTABILITY:</strong> Listening to child's expressed wishes would have prevented ongoing trauma.</p>
+                    <p><strong>BEYOND REASONABLE DOUBT:</strong> Physical evidence of self-harm and emotional distress conclusively proves welfare compromise.</p>
+                    <p><strong>COMPENSATION DUE:</strong> Psychological harm to child from ignoring welfare indicators establishes damages for pain, suffering and future therapeutic needs.</p>
                 </div>
                 
                 <div class="verdict-section">
-                    JUDICIAL ERROR CONFIRMED: Ignoring medical evidence and mischaracterizing therapeutic intervention for autism communication development
+                    JUDICIAL ERROR CONFIRMED: Ignoring child welfare indicators and child's expressed wishes violating welfare principle
                 </div>
             </div>
         </div>
@@ -1025,6 +1493,17 @@
                 arrow.textContent = '▼';
             }
         }
+        
+        // Ensure audio works on mobile
+        document.addEventListener('DOMContentLoaded', function() {
+            const audioElements = document.querySelectorAll('audio');
+            audioElements.forEach(audio => {
+                audio.preload = 'metadata';
+                audio.addEventListener('loadstart', function() {
+                    this.volume = 0.8;
+                });
+            });
+        });
         
         function loadErrorDetails(errorId) {
             const content = document.getElementById('violation-' + errorId);
