@@ -32,7 +32,11 @@ const jsonAudioFiles = [
   
   // Information Withholding
   { file: 'original_audio_court/json_precise/ben_information_challenge_38_27.mp3', name: 'ben_information_challenge_38_27_json.mp3', description: 'Ben 38:27 - Information withholding challenge (27s)', timestamp: '38:27' },
-  { file: 'original_audio_court/json_precise/judge_withhold_justification_40_41.mp3', name: 'judge_withhold_justification_40_41_json.mp3', description: 'Judge 40:41 - Withhold information justification (33s)', timestamp: '40:41' }
+  { file: 'original_audio_court/json_precise/judge_withhold_justification_40_41.mp3', name: 'judge_withhold_justification_40_41_json.mp3', description: 'Judge 40:41 - Withhold information justification (33s)', timestamp: '40:41' },
+  
+  // Child Distress Evidence
+  { file: 'ben_hair_pulling_25_35.mp3', name: 'ben_hair_pulling_25_35_json.mp3', description: 'Ben 25:35 - Hair pulling distress evidence (20s)', timestamp: '25:35' },
+  { file: 'ben_maria_moore_15_39.mp3', name: 'ben_maria_moore_15_39_json.mp3', description: 'Ben 15:39 - Maria Moore procedural failure (11s)', timestamp: '15:39' }
 ];
 
 async function uploadJsonToSupabase() {
